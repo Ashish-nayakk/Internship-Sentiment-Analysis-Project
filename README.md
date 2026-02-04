@@ -1,105 +1,118 @@
-Sentiment Analysis of Social Media Posts
+📘 Sentiment Analysis of Social Media Posts
 
-AI & ML Internship Major Project — InternsElite (May–July 2025)
+AI & ML Internship Major Project – InternsElite (May–July 2025)
 
-This project analyzes the sentiment of social media text (Positive, Negative, Neutral) using Natural Language Processing (NLP) and Machine Learning techniques. It was developed as the major project during my AI & ML (with Python) Internship at InternsElite, completed from 4th May 2025 to 24th July 2025.
+This repository contains a complete Sentiment Analysis system that classifies social media posts into Positive, Negative, and Neutral sentiment using both Traditional Machine Learning and Transformer-based Deep Learning (BERTweet).
+
+The project was developed as part of my AI & ML Internship (with Python) at InternsElite, completed from 4th May 2025 – 24th July 2025.
 
 🚀 Project Overview
 
-The objective of this project is to build a machine learning–based sentiment classifier capable of processing raw text and predicting the underlying sentiment.
-This includes:
+The goal of this project is to perform sentiment analysis on social media text using two different approaches:
 
-Data cleaning and NLP preprocessing
+🔹 1. Classical NLP + Machine Learning
 
-Converting text into numerical features using TF-IDF Vectorization
+Text preprocessing (cleaning, tokenization, stopwords)
 
-Training machine learning classification models
+TF-IDF feature extraction
 
-Evaluating accuracy and performance
+ML classifiers: Logistic Regression, Naive Bayes, SVM
 
-Predicting sentiment for new, unseen text
+Accuracy comparison & evaluation
 
-The project is implemented in a Jupyter Notebook (
+🔹 2. Transformer-Based Deep Learning (BERTweet)
 
-HTML,CSS Bootcamp Workshop-Lets…
+HuggingFace model:
+finiteautomata/bertweet-base-sentiment-analysis
 
-) as part of the internship requirements.
+AutoTokenizer + AutoModelForSequenceClassification
 
-🧠 Features Implemented
+Sentiment pipeline for real-world social media text
 
-✔ Text cleaning (lowercasing, punctuation removal, stopwords filtering)
-✔ Tokenization
-✔ TF-IDF feature extraction
-✔ ML model training (Logistic Regression / Naive Bayes / SVM)
-✔ Accuracy evaluation
-✔ Sentiment prediction on custom inputs
-✔ End-to-end workflow inside the notebook
+GPU support (if available)
 
-🛠️ Tech Stack Used
+This combination demonstrates how both ML and modern NLP transformers can be applied to the same problem.
 
-Python 3
+🧠 Key Features
+
+✔ Text cleaning & normalization
+✔ Tokenization & stopword removal
+✔ TF-IDF vectorizer for classical ML
+✔ Classical classifiers:
+
+Logistic Regression
+
+Naive Bayes
+
+Support Vector Machine (SVM)
+✔ BERTweet Transformer Model using HuggingFace
+✔ Comparative model evaluation
+✔ Real-time sentiment prediction
+✔ Full implementation inside Jupyter Notebook
+
+🛠 Tech Stack
+
+Python
 
 Pandas, NumPy
 
 Scikit-Learn
 
-NLTK / Stopwords
+NLTK
+
+HuggingFace Transformers
+
+BERTweet
 
 📊 Model Workflow
+Stage 1: Preprocessing
 
-Import & Clean Data
-Remove noise such as punctuation, symbols, and stopwords.
+Lowercasing
 
-Preprocess Text
-Tokenize, normalize, and prepare corpus.
+Removing punctuation
 
-Feature Engineering
-Use TF-IDF Vectorizer to convert text into numerical features.
+Stopword filtering
 
-Train ML Model
-Models tested include:
+Tokenization
 
-Logistic Regression
+Stage 2: TF-IDF Machine Learning Model
 
-Multinomial Naive Bayes
+Convert text into numerical tokens
 
-Support Vector Machine (SVM)
+Train ML classifiers
 
-Evaluate & Compare
-Check accuracy, precision, recall, and confusion matrix.
+Evaluate accuracy & confusion matrix
 
-Predict Sentiment
-Pass any user-entered text to get sentiment.
+Stage 3: BERTweet Transformer Model
+
+Load pretrained transformer
+
+Tokenize input text
+
+Run through model
+
+Decode sentiment label
+
+Higher accuracy for social media data
 
 🏆 Internship Details
 
-This major project was completed during the AI & Machine Learning Internship at InternsElite.
+This project was completed during my AI & ML (Python) Internship with InternsElite.
 
-Internship Duration: 4th May 2025 – 24th July 2025
+Start Date: 4th May 2025
 
-Certificate Issued on: 28th July 2025
+End Date: 24th July 2025
+
+Certificate Issue Date: 28th July 2025
 
 Certificate ID: IT/2025/AIML-PY-A6/IC-9635
 
-Domain: AI & ML with Python
-
-Certificate is included in the repository (
-
-Certificate of Internship-ASHIS…
-
-)
+Certificate is included in this repository.
 
 🎥 Demo Video
 
-A working model demonstration video is included:
-📌 working_video.mp4 ()
-
-📌 Future Improvements
-
-✨ Integrate live APIs (Twitter/Reddit)
-✨ Deploy using Flask / Streamlit
-✨ Add BERT-based deep learning sentiment model
-✨ Build a dashboard for real-time sentiment trends
-TF-IDF Vectorizer
+A working demonstration of the sentiment analysis system is included in the repository.
+(See: Working_video.mp4)
+TF-IDF
 
 Jupyter Notebook
